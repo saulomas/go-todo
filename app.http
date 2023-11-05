@@ -1,0 +1,31 @@
+POST http://localhost:9000 HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Meu TODO",
+    "description": "Descrição",
+    "done": false
+}
+
+###
+
+GET http://localhost:9000
+
+###
+
+GET http://localhost:9000/1
+
+###
+
+PUT http://localhost:9000/1
+content-type: application/json
+
+{
+  "Title": "Meu primeiro TODO",
+  "Description": "Aqui vai a descrição...",
+  "Done": true
+}
+
+###
+
+DELETE http://localhost:9000/3
